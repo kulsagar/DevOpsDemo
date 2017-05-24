@@ -31,7 +31,7 @@ public class AccountServiceImpl implements AccountService {
 
 	@Override
 	public Account showBalance(int accountNumber) throws AccountNotFoundException {
-		Account a = null;
+		Account a;
 		if ((a = repo.find(new Account(accountNumber))) != null) {
 
 			return a;
