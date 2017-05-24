@@ -12,7 +12,7 @@ public class AccountRepoImpl implements AccountRepo {
 	public AccountRepoImpl() {
 		super();
 
-		accountCollection = new HashMap<Integer, Account>();
+		accountCollection = new HashMap<>();
 	}
 
 	@Override
