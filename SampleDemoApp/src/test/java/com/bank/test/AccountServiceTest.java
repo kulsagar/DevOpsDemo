@@ -32,7 +32,7 @@ public class AccountServiceTest {
 	@Test
 	public void GivenAccountIsValidAccountWhenShowBalanceIsCalledByPassingValidAccountNumberThenAccountBeanShouldBeReturned()
 			throws AccountCreationFaliedException, AccountNotFoundException {
-		Account a = service.createAccount(3000);
+		Account a = service.createAccount(2000);
 		assertTrue("Success", service.showBalance(a.getAccountNumber()).getBalance() == 2000);
 
 	}
