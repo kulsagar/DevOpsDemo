@@ -6,8 +6,8 @@ package com.bank.beans;
  */
 public class Account {
 
-	private int accountNumber;
-	private float balance;
+	int accountNumber;
+	float balance;
 
 	public Account(int accountNumber) {
 		super();
