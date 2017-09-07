@@ -33,13 +33,13 @@ public class AccountServiceTest {
 	public void GivenAccountIsValidAccountWhenShowBalanceIsCalledByPassingValidAccountNumberThenAccountBeanShouldBeReturned()
 			throws AccountCreationFaliedException, AccountNotFoundException {
 		Account a = service.createAccount(2000);
-		assertTrue("Success", service.showBalance(a.getAccountNumber()).getBalance() == 2000);
+		assertTrue("Success", service.showBalance(a.getAccountNumber()).getBalance() == 200);
 
 	}
 
 	@Test(expected = AccountNotFoundException.class)
 	public void WhenShowBalanceIsCalledByPassingInvalidAccountNumberThenMethodShouldThrowException()
 			throws AccountCreationFaliedException, AccountNotFoundException {
-		service.showBalance(2345);
+		service.showBalance(23);
 	}
 }
